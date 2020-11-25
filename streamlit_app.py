@@ -15,6 +15,28 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+@st.cache
+def get_data():
+    url = "http://data.insideairbnb.com/united-states/ny/new-york-city/2019-09-12/visualisations/listings.csv"
+    return pd.read_csv(url)
+df = get_data()
+
+st.title("Streamlit 101: An in-depth introduction")
+st.markdown("Welcome to this in-depth introduction to [...].")
+st.header("Customary quote")
+st.markdown("> I just love to go home, no matter where I am [...]")
+
+st.dataframe(df.head())
+
+
+cols = ["name", "host_name", "neighbourhood", "room_type", "price"]
+st_ms = st.multiselect("Columns", df.columns.tolist(), default=cols)
+
+
+st.table(df.groupby("room_type").price.mean().reset_index()\
+.round(2).sort_values("price", ascending=False)\
+.assign(avg_price=lambda x: x.pop("price").apply(lambda y: "%.2f" % y)))
+
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
