@@ -23,6 +23,11 @@ footer {visibility:hidden;}
 
 st.markdown(hide_streamlit_style,unsafe_allow_html=True)
 st.sidebar.markdown('<p id="my-footer">Made by <a  href="https://www.google.com" target="_blank">sdfs</a></p>',unsafe_allow_html=True)
+import plotly_express as px
+from plotly.offline import plot
+iris = px.data.iris()
+scatter_plot = px.scatter(iris, x="sepal_width", y="sepal_length")
+plot(scatter_plot)
 """
 # Welcome to Streamlit!
 
