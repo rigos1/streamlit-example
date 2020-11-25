@@ -14,13 +14,13 @@ hide_streamlit_style="""
 <style>
 #MainMenu {visibility:hidden;}
 footer {visibility:hidden;}
-div.has(a#my-footer) {
+div.has(p#my-footer) {
     text-align: center;
     position: fixed;
     bottom: 5%;
     }
 </style>"""
-st.sidebar.markdown('<a id="my-footer" href="google.com">sdfs</a>',unsafe_allow_html=True)
+st.sidebar.markdown('<p id="my-footer">Made by <a  href="google.com">sdfs</a></p>',unsafe_allow_html=True)
 st.markdown(hide_streamlit_style,unsafe_allow_html=True)
 
 """
