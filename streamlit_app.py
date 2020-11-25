@@ -14,7 +14,7 @@ hide_streamlit_style="""
 <style>
 #MainMenu {visibility:hidden;}
 footer {visibility:hidden;}
-#my-footer{
+div.has(+p #my-footer) {
     text-align: center;
     position: fixed;
     bottom: 5%;
@@ -35,7 +35,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 
-st.sidebar.markdown('<p id='my-footer'>sdfs</p>')
+st.sidebar.markdown('<p id="my-footer">sdfs</p>')
 @st.cache
 def get_data():
     url = "http://data.insideairbnb.com/united-states/ny/new-york-city/2019-09-12/visualisations/listings.csv"
