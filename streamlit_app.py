@@ -7,7 +7,7 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded',
     page_title='Page Title',
-    page_icon='🚂'
+    page_icon='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vMQ4cL_Rf9dyzhTXyeCndOU7QQshyBy04w&usqp=CAU'
 )
 
 hide_streamlit_style="""
