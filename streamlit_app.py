@@ -7,7 +7,7 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded',
     page_title='Page Title',
-    page_icon='🕰️'
+    page_icon=':heart:'
 )
 
 hide_streamlit_style="""
