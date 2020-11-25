@@ -7,7 +7,7 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded',
     page_title='Page Title',
-    page_icon='💺'
+    page_icon='📈'
 )
 
 hide_streamlit_style="""
@@ -20,7 +20,7 @@ div.has(a#my-footer) {
     bottom: 5%;
     }
 </style>"""
-
+st.sidebar.markdown('<a id="my-footer" href="google.com">sdfs</a>',unsafe_allow_html=True)
 st.markdown(hide_streamlit_style,unsafe_allow_html=True)
 
 """
@@ -35,7 +35,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 
-st.sidebar.markdown('<a id="my-footer" href="google.com">sdfs</a>',unsafe_allow_html=True)
+
 @st.cache
 def get_data():
     url = "http://data.insideairbnb.com/united-states/ny/new-york-city/2019-09-12/visualisations/listings.csv"
