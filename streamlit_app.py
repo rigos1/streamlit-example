@@ -9,6 +9,12 @@ st.set_page_config(
     page_title='Page Title',
     page_icon='🚄'
 )
+
+hide_streamlit_style="""
+<style>
+#MainMenu {visibility:hidden;}
+footer {visibility:hidden;}
+</style>"""
 """
 # Welcome to Streamlit!
 
