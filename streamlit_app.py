@@ -7,7 +7,7 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded',
     page_title='Page Title',
-    page_icon='📈'
+    page_icon='🕰️'
 )
 
 hide_streamlit_style="""
@@ -20,9 +20,9 @@ div.has(p#my-footer) {
     bottom: 5%;
     }
 </style>"""
-st.sidebar.markdown('<p id="my-footer">Made by <a  href="google.com">sdfs</a></p>',unsafe_allow_html=True)
-st.markdown(hide_streamlit_style,unsafe_allow_html=True)
 
+st.markdown(hide_streamlit_style,unsafe_allow_html=True)
+st.sidebar.markdown('<p id="my-footer">Made by <a  href="google.com">sdfs</a></p>',unsafe_allow_html=True)
 """
 # Welcome to Streamlit!
 
