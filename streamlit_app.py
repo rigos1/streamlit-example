@@ -35,7 +35,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 
-st.sidebar.markdown('<a id="my-footer" href="google.com">sdfs</a>')
+st.sidebar.markdown('<a id="my-footer" href="google.com">sdfs</a>',unsafe_allow_html=True)
 @st.cache
 def get_data():
     url = "http://data.insideairbnb.com/united-states/ny/new-york-city/2019-09-12/visualisations/listings.csv"
