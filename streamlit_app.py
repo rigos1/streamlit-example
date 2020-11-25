@@ -31,6 +31,7 @@ st.dataframe(df.head())
 
 cols = ["name", "host_name", "neighbourhood", "room_type", "price"]
 st_ms = st.multiselect("Columns", df.columns.tolist(), default=cols)
+st.dataframe(df.head(),columns=st_ms)
 
 
 st.table(df.groupby("room_type").price.mean().reset_index()\
