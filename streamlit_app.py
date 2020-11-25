@@ -14,7 +14,7 @@ hide_streamlit_style="""
 <style>
 #MainMenu {visibility:hidden;}
 footer {visibility:hidden;}
-div.has(p#my-footer) {
+#my-footer {
     text-align: center;
     position: fixed;
     bottom: 5%;
