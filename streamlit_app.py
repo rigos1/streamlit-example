@@ -3,7 +3,12 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-
+st.set_page_config(
+    layout='wide',
+    initial_sidebar_state='expanded',
+    page_title='Page Title',
+    page_icon='🚄'
+)
 """
 # Welcome to Streamlit!
 
@@ -14,12 +19,7 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
-st.set_page_config(
-    layout='wide',
-    initial_sidebar_state='expanded',
-    page_title='Page Title',
-    page_icon='🚄'
-)
+
 
 st.sidebar.write('sdfs')
 @st.cache
