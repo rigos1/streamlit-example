@@ -17,7 +17,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 st.set_page_config(
     layout='wide',
     initial_sidebar_state='expanded',
-    page_title='Page Title,
+    page_title='Page Title',
     page_icon='🚄'
 )
 
