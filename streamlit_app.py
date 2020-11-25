@@ -28,6 +28,7 @@ from plotly.offline import plot
 iris = px.data.iris()
 scatter_plot = px.scatter(iris, x="sepal_width", y="sepal_length")
 st.write(scatter_plot)
+
 """
 # Welcome to Streamlit!
 
