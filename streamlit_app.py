@@ -22,7 +22,7 @@ footer {visibility:hidden;}
 </style>"""
 
 st.markdown(hide_streamlit_style,unsafe_allow_html=True)
-st.sidebar.markdown('<p id="my-footer">Made by <a  href="https://www.google.com">sdfs</a></p>',unsafe_allow_html=True)
+st.sidebar.markdown('<p id="my-footer">Made by <a  href="https://www.google.com" target="_blank">sdfs</a></p>',unsafe_allow_html=True)
 """
 # Welcome to Streamlit!
 
